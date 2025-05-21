@@ -1,9 +1,136 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <title>PÁGINA DE PRUEBA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido - Landing Page Minimalista</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #3467eb;
+      --secondary: #fafbfc;
+      --accent: #e8eaf1;
+      --text: #222;
+      --shadow: 0 4px 24px rgba(0,0,0,0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--secondary);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      padding: 2rem 0 1.5rem 0;
+      background: white;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -1px;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #666;
+      font-weight: 400;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 420px;
+      margin: 2rem auto 0 auto;
+      background: white;
+      border-radius: 1.1rem;
+      box-shadow: var(--shadow);
+      padding: 2.4rem 2rem;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    main p {
+      font-size: 1.05rem;
+      color: #444;
+      margin-bottom: 2rem;
+    }
+
+    .cta-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 2rem;
+      padding: 0.9rem 2.2rem;
+      font-size: 1.12rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 2px 12px rgba(52, 103, 235, 0.13);
+      transition: background 0.18s, box-shadow 0.18s;
+    }
+
+    .cta-btn:hover, .cta-btn:focus {
+      background: #2346a1;
+      box-shadow: 0 4px 24px rgba(52, 103, 235, 0.17);
+      outline: none;
+    }
+
+    footer {
+      margin: 2.5rem 0 1.2rem 0;
+      color: #bbb;
+      font-size: 0.98rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1.5rem 0.8rem;
+        max-width: 95vw;
+      }
+      header {
+        padding: 1.2rem 0 1rem 0;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>ESTA ES UNA PÁGINA DE PRUEBAAAA 22222222222222!!!</h1>
+  <header>
+    <h1>¡Bienvenido!</h1>
+    <p>Tu nueva landing page minimalista y agradable.</p>
+  </header>
+  <main>
+    <h2>Un diseño limpio, intuitivo y enfocado en ti</h2>
+    <p>
+      Explora una experiencia simple y moderna.<br>
+      Perfecta para destacar tus ideas, proyectos o productos.
+    </p>
+    <button class="cta-btn" onclick="alert('¡Gracias por tu interés!')">
+      Empezar ahora
+    </button>
+  </main>
+  <footer>
+    &copy; 2025 &middot; Realizado con &#9829; por XanderMQ
+  </footer>
 </body>
-  
 </html>
